@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Momo+Trust+Display&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --primary-color: #f4ebe7;
+    --secondary-color: #341713;
+    --yellow-color:#ebe02f;
+    --orange-color:#fe6c31;
+    --blue-color:#17a9e7;
+    --green-color:#17a9e7;
+    --purple-color:#6323a4;
+    --green-color:#247848;
+    /* --tertiary-color: #f4ebe7; */
+    --primary-font: 'Montserrat', sans-serif;
+    --secondary-font: 'Momo Trust Display', sans-serif;
+}
+body{
+    font-family: var(--primary-font);
+    background-color: var(--primary-color);
+}
+a{
+    text-decoration: none;
+}
+
+
+/* Estilos del nav de descuentos  */
+
+.nav-price{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 1rem ;
+    background-color: var(--purple-color);
+}
+.nav-price-left, .nav-price-right, .nav-price-center{
+    display: flex;
+    align-items: center;
+    gap: .2rem;
+}
+.nav-price-left > a, .nav-price-right > a, .nav-price-center > a{
+    color: var(--primary-color);
+}
+.nav-price > div > svg {
+    width: 24px;
+}
+
+/* Estilos del nav principal */
+
+.nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2rem 1rem ;
+    width: 80%;
+}
+
+.nav-logo{
+    display: flex;
+    align-items: center;
+    gap: .2rem;
+}
+
+.nav-logo > a{
+    color: var(--secondary-color);
+    font-family: var(--secondary-font);
+    font-size: 2.5rem;
+}
+
+.punto{
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: var(--orange-color);
+    margin-top: 1rem;
+}
+
+.nav-menu > a{
+    font-family: var(--secondary-font);
+    color: var(--secondary-color);
+    font-size: 1.5rem;
+}
+
+.nav-menu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    flex-grow:1;
+}
+
+/* Estilos del header  */
+header{
+    background-color: #fff;
+    height: 80vh;
+    margin: 0 8rem;
+    border-radius: 4rem;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+}
+
+h1{
+    font-family: var(--secondary-font);
+    text-transform: uppercase;
+    font-size: 9rem;
+    color: var(--secondary-color);
+    text-align: center;
+}
+
+.sticker-title-orange, .sticker-title-green{
+    font-family: var(--secondary-font);
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    letter-spacing: -2px;
+    color: var(--primary-color);
+    background-color: var(--orange-color);
+    padding: .5rem 1rem;
+    position: absolute;
+    border-radius: 2rem;
+}
+
+.sticker-title-orange{
+    right: 15%;
+    top: 22%;
+}
+
+.sticker-title-green{
+    left: 27%;
+    rotate: -5deg;
+    top: 24%;
+    background-color: var(--green-color);
+}
+
+.text-header{
+    font-family: var(--secondary-font);
+    width: 30%;
+    margin-left: 6%;
+}
+
+.subtitle-header > h3{
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    color: var(--secondary-color);
+}
+
+.subtitle-header{
+    display: flex;
+}
+
+.sticker-subtitle-blue{
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    background-color: var(--blue-color);
+    padding: .5rem 1rem;
+    border-radius: 2rem;
+    width: fit-content;
+    position: absolute;
+    margin-left: .5rem;
+    rotate: 6deg;
+}
+
+.paragraph-header{
+    font-size: 1.2rem;
+    font-family: var(--primary-font);
+    font-weight: 600;
+    margin-top: 2rem;
+    width: 80%;
+}
